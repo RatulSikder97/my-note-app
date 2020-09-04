@@ -96,7 +96,7 @@ html {
   background: #b2d8a1;
   width: 35%;
   height: 100vh;
-  border-right: 0.1rem solid #28353b;
+  border-right: 0.1rem solid #84949b;
   border-left: 0.1rem solid #28353b;
 }
 
@@ -141,3 +141,43 @@ html {
 /* =================== */
 /* main-content section */
 /* =================== */
+
+.main-content {
+  flex: 1;
+  background: #ffffff;
+}
+
+/* up-desc */
+.up-desc {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.up-desc .btn {
+  display: inline-block;
+  width: 5rem;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-weight: 600;
+}
+
+.up-desc i {
+  font-size: 1.8rem;
+  margin-left: 1rem;
+}
+.left-desc {
+  font-size: 1.3rem;
+  color: #7a8083;
+}
+
+.left-desc h3 {
+  display: inline-block;
+  padding-left: 1rem;
+}
+.menu-bar {
+  height: 7rem;
+  background: #dee2ff;
+}
