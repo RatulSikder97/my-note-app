@@ -178,6 +178,40 @@ html {
   padding-left: 1rem;
 }
 .menu-bar {
-  height: 7rem;
-  background: #dee2ff;
+  height: fit-content;
+  background: #e3dfdf;
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 0;
+  font-size: 1.6rem;
+}
+
+.sub-menu {
+  border-right: 0.1rem solid #807f7f;
+}
+.sub-menu i {
+  margin: 0 1rem;
+}
+.sub-menu ul {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+.sub-menu ul li {
+  height: 100%;
+  width: 100%;
+  padding: 1.2rem 0.5rem;
+}
+.sub-menu ul li:hover {
+  background: #eeb10a;
+}
+.sub-menu select {
+  margin: 1rem 0.5rem;
+  padding: 0.2rem;
+  border: 0.1rem solid #aed9e0;
+  outline-color: #b2d8a1;
+}
+
+select.font-name {
+  width: 15rem;
 }

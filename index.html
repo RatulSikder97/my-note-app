@@ -89,11 +89,13 @@
 
             <div class="menu-bar">
                 <div class="sub-menu">
-                    <i class="fa fa-undo" aria-hidden="true"></i>
-                    <i class="fa fa-repeat" aria-hidden="true"></i>
+                    <ul>
+                        <li id="undo"> <i class="fa fa-undo" aria-hidden="true"></i></li>
+                        <li id="redo"> <i class="fa fa-repeat" aria-hidden="true"></i></li>
+                    </ul>
                 </div>
                 <div class="sub-menu">
-                    <select name="font" id="font" class="font">
+                    <select name="font" id="font-name" class="font-name">
                         <option value="1">Font One</option>
                         <option value="1">Font One</option>
                         <option value="1">Font One</option>
@@ -101,7 +103,7 @@
                     </select>
                 </div>
                 <div class="sub-menu">
-                    <select name="size" id="size" class="size">
+                    <select name="size" id="us-font-size" class="us-font-size">
                         <option value="1">14</option>
                         <option value="1">14</option>
                         <option value="1">14</option>
@@ -110,20 +112,28 @@
                 </div>
 
                 <div class="sub-menu">
-                    <div class="font-color">
 
-                    </div>
-                    <div class="fontStyle">
-                        <i class="fa fa-bold" aria-hidden="true"></i>
-                        <i class="fa fa-italic" aria-hidden="true"></i>
-                    </div>
+                    <ul>
+                        <li id="b-bold">
+                            <i class="fa fa-bold" aria-hidden="true"></i>
+                        </li>
+                        <li id="i-italic">
+                            <i class="fa fa-italic" aria-hidden="true"></i>
+
+                        </li>
+                    </ul>
+
                 </div>
 
                 <div class="sub-menu">
-                    <i class="fa fa-align-left" aria-hidden="true"></i>
-                    <i class="fa fa-align-right" aria-hidden="true"></i>
-                    <i class="fa fa-align-center    "></i>
-                    <i class="fa fa-align-justify    "></i>
+                    <ul>
+
+                        <li id="al-left"><i class="fa fa-align-left" aria-hidden="true"></i></li>
+                        <li id="al-right"> <i class="fa fa-align-right" aria-hidden="true"></i></li>
+                        <li id="al-center"><i class="fa fa-align-center    "></i></li>
+                        <li id="al-justify"> <i class="fa fa-align-justify    "></i></li>
+                    </ul>
+
                 </div>
             </div>
             <div class="note-edit">
