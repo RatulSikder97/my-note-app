@@ -17,14 +17,14 @@ html {
   background: #2f3e46;
   max-width: 25rem;
   height: 100vh;
-  color: rgb(7, 226, 106);
+  color: #ffca3a;
 }
 
 .logo {
   padding-top: 5rem;
   font-size: 2.2rem;
   text-align: center;
-  text-shadow: 0.1rem 0.1rem 0.3rem #99fa6d, 0rem -0.1rem 0.3rem #99fa6d;
+  text-shadow: 0.1rem 0.1rem 0.3rem #eeb10a, 0rem -0.1rem 0.3rem #eeb10a;
 }
 
 .logo i {
@@ -67,4 +67,21 @@ html {
 
 .side-options ul li a span {
   margin-left: 2rem;
+}
+
+/* create note */
+.btn {
+  padding: 1rem 2rem;
+  width: 80%;
+  margin: 2rem;
+  background: #4bf04b;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #3ec400;
 }
