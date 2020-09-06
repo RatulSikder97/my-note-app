@@ -1,8 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;1,500&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;1,300&display=swap");
+
 * {
+  /* font-family: "Kanit", sans-serif;
+  font-family: "Pacifico", cursive;
+  font-family: "Roboto", sans-serif; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style-type: none;
+
   text-decoration: none;
 }
 
@@ -12,6 +17,7 @@ html {
 
 .container {
   display: flex;
+  height: 100vh;
 }
 
 /* =================== */
@@ -98,17 +104,18 @@ html {
   height: 100vh;
   border-right: 0.1rem solid #84949b;
   border-left: 0.1rem solid #28353b;
+  display: none;
 }
 
 .title-head {
   color: #000000;
   display: inline-block;
-  height: 7rem;
+  height: fit-content;
   font-size: 2rem;
   text-align: center;
   text-shadow: 0.1rem 0.1rem 0.3rem #636363, 0rem -0.1rem 0.3rem #636363;
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 3rem 2rem;
   background: #29ca4a;
   border-bottom: 0.1rem solid rgb(121, 120, 120);
 }
@@ -118,7 +125,9 @@ html {
   padding: 2rem;
   font-size: 1.6rem;
 }
-
+.notes ul {
+  list-style-type: none;
+}
 .notes ul li {
   margin-bottom: 1.5rem;
   display: inline-block;
@@ -159,7 +168,7 @@ html {
   width: 5rem;
   font-size: 1.3rem;
   text-align: center;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   margin: 0;
   font-weight: 600;
 }
@@ -186,6 +195,13 @@ html {
   font-size: 1.6rem;
 }
 
+.menu-bar-op {
+  border: none;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  outline: 0;
+}
 .sub-menu {
   border-right: 0.1rem solid #807f7f;
 }
@@ -196,13 +212,15 @@ html {
   display: flex;
   height: 100%;
   justify-content: space-between;
+  list-style-type: none;
 }
 .sub-menu ul li {
   height: 100%;
-  width: 100%;
-  padding: 1.2rem 0.5rem;
+  width: 5rem;
+
+  /* padding: 1.2rem 0.5rem; */
 }
-.sub-menu ul li:hover {
+.sub-menu ul li button:hover {
   background: #eeb10a;
 }
 .sub-menu select {
@@ -214,4 +232,118 @@ html {
 
 select.font-name {
   width: 15rem;
+}
+
+/* ====================== */
+/* note edit section */
+/* ====================== */
+
+.note-edit {
+  padding: 2rem;
+  max-height: 85vh;
+  overflow-y: scroll;
+}
+
+.note-edit input {
+  display: block;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  border: none;
+  background: #f7f3f3;
+  border-radius: 0.5rem;
+  outline-color: #c7c7c7;
+  outline-width: 0.1rem;
+  font-size: 1.5rem;
+}
+
+.note-edit input:focus {
+  background: #dbdbdb;
+}
+
+.note-edit form {
+  font-size: 1.6rem;
+}
+
+.note-edit form input.title {
+  height: 5rem;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.note-edit form input.sub-title {
+  height: 3rem;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+.little-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.little-desc label {
+  font-weight: 700;
+}
+.little-desc input {
+  width: 80%;
+  height: 3rem;
+}
+
+.little-desc input[type="date"] {
+  font-size: 1.6rem;
+}
+
+/* ================= */
+/* block note */
+/* ================= */
+
+.block-note {
+  width: 100%;
+  min-height: auto;
+  background: #eeeeee;
+  margin: 2rem 0rem;
+  border-radius: 0.5rem;
+}
+
+#add-sec {
+  border: 0;
+  float: right;
+  height: 80%;
+  width: auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+/* .block-note table th, */
+.block-head {
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  background: lightsalmon;
+  font-size: 2.4rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.block-head div {
+  display: inline-block;
+}
+
+#block-body {
+  margin: 0.25rem 1rem;
+}
+/* .block-note table tr {
+  vertical-align: top;
+}
+
+.block-note table tr td, */
+
+.b-sec {
+  margin-bottom: 0.5rem;
+  background: #c1c1c1;
+  width: 100%;
+  min-height: 5rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  padding: 2rem;
+  outline: 0;
 }
